@@ -1,0 +1,13 @@
+ultralytics>=8.3
+torch>=2.2
+torchvision
+opencv-python
+numpy<2.0
+Pillow
+huggingface_hub
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart
+reportlab>=4.0
+matplotlib
+imageio-ffmpeg

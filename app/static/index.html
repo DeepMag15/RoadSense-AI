@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RoadSense AI</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231c5cab'/><path d='M11 26 L14 6 M21 26 L18 6' stroke='white' stroke-width='2.5' stroke-linecap='round'/><path d='M16 9v3M16 16v3M16 23v2' stroke='%23fab219' stroke-width='2.5' stroke-linecap='round'/></svg>">
+  <link rel="stylesheet" href="/static/vendor/leaflet.css">
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="8" fill="#1c5cab"/><path d="M11 26 L14 6 M21 26 L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round"/><path d="M16 9v3M16 16v3M16 23v2" stroke="#fab219" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </span>
+      <span><b>RoadSense</b> AI<small>Road damage intelligence</small></span>
+    </a>
+    <nav>
+      <a href="#/" data-nav="dashboard"><svg viewBox="0 0 24 24"><path d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z"/></svg>Dashboard</a>
+      <a href="#/new" data-nav="new"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg>New inspection</a>
+      <a href="#/inspections" data-nav="inspections"><svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>Inspections</a>
+    </nav>
+    <div class="sidebar-foot">
+      <div id="model-status" class="model-status"><span class="dot"></span><span>Loading models…</span></div>
+    </div>
+  </aside>
+  <main id="view" class="main"></main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="/static/vendor/chart.umd.min.js"></script>
+<script src="/static/vendor/leaflet.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
